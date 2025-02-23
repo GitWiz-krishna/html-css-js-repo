@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example</title>
+    <style>
+        /* Styling for the table */
+        table {
+            width: 50%;  /* Sets the table width to 50% of the page */
+            border-collapse: collapse; /* Merges borders to avoid double lines */
+            margin: 20px 0; /* Adds space above and below the table */
+        }
+
+        /* Styling for table headers and data cells */
+        th, td {
+            border: 1px solid black; /* Adds a border to each cell */
+            padding: 10px; /* Adds space inside each cell for better readability */
+            text-align: left; /* Aligns text to the left */
+        }
+
+        /* Background color for table headers */
+        th {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Basic Command List</h2> <!-- Table heading -->
+
+    <table> <!-- Start of the table -->
+        <tr> <!-- First row (header row) -->
+            <th>Command</th> <!-- Table header for the "Command" column -->
+            <th>Description</th> <!-- Table header for the "Description" column -->
+        </tr>
+        
+        <!-- Each row below contains a command and its description -->
+        <tr>
+            <td>cd</td> <!-- Command -->
+            <td>Change directory</td> <!-- Description -->
+        </tr>
+
+        <tr>
+            <td>ls</td>
+            <td>List files in the directory (Linux/macOS)</td>
+        </tr>
+
+        <tr>
+            <td>dir</td>
+            <td>List files in the directory (Windows)</td>
+        </tr>
+
+        <tr>
+            <td>mkdir</td>
+            <td>Create a new directory</td>
+        </tr>
+
+        <tr>
+            <td>rm</td>
+            <td>Remove a file (Linux/macOS)</td>
+        </tr>
+    </table> <!-- End of the table -->
+
+</body>
+</html>
