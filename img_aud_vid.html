@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media Tags Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 300px; /* Sets image width */
+            height: auto; /* Maintains aspect ratio */
+            border: 2px solid black;
+            margin: 10px 0;
+        }
+        video, audio {
+            display: block;
+            margin: 10px 0;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>HTML Media Tags Example</h2>
+
+    <!-- IMAGE TAGS -->
+    <h3>Image Example</h3>
+
+    <!-- Basic Image -->
+    <img src="example.jpg" alt="Example Image">
+    <!-- 'src' specifies the image file, 'alt' provides alternative text -->
+
+    <!-- Image with link -->
+    <a href="example.jpg" target="_blank">
+        <img src="example.jpg" alt="Clickable Image">
+    </a>
+    <!-- Clicking the image opens the file in a new tab -->
+
+    <!-- Responsive Image -->
+    <img src="example.jpg" alt="Responsive Image" style="max-width: 100%; height: auto;">
+    <!-- Ensures the image resizes correctly on different screen sizes -->
+
+    <!-- AUDIO TAGS -->
+    <h3>Audio Example</h3>
+
+    <!-- Basic Audio Player -->
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <!-- 'controls' adds play, pause, and volume options -->
+    <!-- Multiple 'source' tags allow different formats for compatibility -->
+
+    <!-- Autoplay & Loop -->
+    <audio controls autoplay loop>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    <!-- 'autoplay' starts playing automatically (may require user interaction in some browsers) -->
+    <!-- 'loop' makes the audio repeat -->
+
+    <!-- VIDEO TAGS -->
+    <h3>Video Example</h3>
+
+    <!-- Basic Video Player -->
+    <video controls width="400">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <!-- 'controls' adds play, pause, volume, and fullscreen options -->
+
+    <!-- Autoplay & Loop -->
+    <video controls autoplay loop muted width="400">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <!-- 'muted' is required for autoplay in modern browsers -->
+    <!-- 'loop' makes the video repeat -->
+
+    <!-- Embedded YouTube Video -->
+    <h3>Embedded YouTube Video</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+        title="YouTube Video" frameborder="0" allowfullscreen>
+    </iframe>
+    <!-- Replace 'VIDEO_ID' with the actual YouTube video ID -->
+
+</body>
+</html>
