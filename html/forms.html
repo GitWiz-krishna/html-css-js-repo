@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Simple HTML Table</title>
+    <style > 
+   
+        table {
+            width: 50%; /* Sets the table width to 50% of the page */
+            border-collapse: collapse; /* Merges borders into a single border */
+        }
+        th, td {
+            border: 1px solid black; /* Adds a border to table cells */
+            padding: 10px; /* Adds spacing inside cells */
+            text-align: left; /* Aligns text to the left */
+        }
+        th {
+            background-color: lightgray; /* Sets background color for headers */
+        }
+    </style>
+</head>
+<body >
+    
+    <!-- Creating a simple table -->
+    <table>
+        <caption>Employee Details</caption> <!-- Table caption/title -->
+        <tr>
+            <!-- Table header row -->
+            <th>ID</th> <!-- Header cell for ID -->
+            <th>Name</th> <!-- Header cell for Name -->
+            <th>Department</th> <!-- Header cell for Department -->
+        </tr>
+        <tr>
+            <!-- First data row -->
+            <td>101</td> <!-- Employee ID -->
+            <td>John Doe</td> <!-- Employee Name -->
+            <td>HR</td> <!-- Employee Department -->
+        </tr>
+        <tr>
+            <!-- Second data row -->
+            <td>102</td>
+            <td>Jane Smith</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <!-- Third data row -->
+            <td>103</td>
+            <td>Bob Johnson</td>
+            <td>Finance</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
